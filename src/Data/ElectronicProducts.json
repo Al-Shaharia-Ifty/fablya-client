@@ -1,0 +1,271 @@
+[
+  {
+    "img": "https://i.ibb.co/1ZjR0NZ/samsung-galaxy-s2.webp",
+    "name": "Samsung Galaxy S21",
+    "category": "mobile&tablets",
+    "details": "The Samsung Galaxy S21 is a high-end smartphone that was released in January 2021. It has a 6.2-inch AMOLED display, a Qualcomm Snapdragon 888 processor, 8GB of RAM, and 128GB of storage. ",
+    "points": "The phone also has a triple-lens rear camera system, a 4,000mAh battery, and a water-resistant design. The Samsung Galaxy S21 is available in four colors: Phantom Gray, Phantom White, Phantom Violet, and Phantom Pink. The phone starts at $799 in the United States. Dynamic AMOLED 2X display with a 120Hz refresh rate Qualcomm Snapdragon 888 processor 8GB of RAM 128GB of storage Triple-lens rear camera system (12MP wide, 12MP ultrawide, 64MP telephoto) 40MP front-facing camera 4,000mAh battery Water-resistant design Android 11 operating system",
+    "amount": "63,500",
+    "comments": [
+      {
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "razu@gmail.com",
+        "name": "Ethan Thompson",
+        "comment": "I absolutely love this phone! The camera quality is outstanding, and the battery life is impressive. It's sleek, fast, and has all the features I need.",
+        "star": 4
+      },
+      {
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "tonmoy@gmail.com",
+        "name": "Olivia Rodriguez",
+        "comment": "The display on this phone is stunning! The colors are vibrant, and the clarity is remarkable. I enjoy watching videos and playing games on it",
+        "star": 3
+      },
+      {
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "abubokkor@gmail.com",
+        "name": "Benjamin Patel",
+        "comment": "The fingerprint scanner works flawlessly, and the face unlock feature is super convenient. It provides excellent security for my device.",
+        "star": 4
+      }
+    ]
+  },
+  {
+    "img": "https://i.ibb.co/svDTd5c/8.png",
+    "name": "Apple iPhone 12 pro max",
+    "category": "mobile&tablets",
+    "details": "The iPhone 12 is a smartphone that was released in October 2020. It has a 6.1-inch OLED display, an A14 Bionic processor, and 4GB of RAM. The phone also has a dual-lens rear camera system, a 12MP front-facing camera, and a 2,815mAh battery. ",
+    "points": "The iPhone 12 is available in five colors: black, white, red, blue, and green. The phone starts at $799 in the United States. OLED display with a 2532x1170 resolution. A14 Bionic processor. 4GB of RAM. Dual-lens rear camera system (12MP wide, 12MP ultrawide). 12MP front-facing camera. 2,815mAh battery. 5G connectivity. Ceramic Shield front cover. MagSafe wireless charging",
+    "amount": "201,599",
+    "comments": [
+      {
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "razu@gmail.com",
+        "name": "Emma Sullivan",
+        "comment": "I'm amazed by the speed and performance of this phone. It handles multitasking effortlessly, and the apps run smoothly without any lag.",
+        "star": 5
+      },
+      {
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "tonmoy@gmail.com",
+        "name": "Liam Nguyen",
+        "comment": "The audio quality on this phone is top-notch. Whether I'm listening to music or watching movies, the sound is crystal clear and immersive.",
+        "star": 5
+      },
+      {
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "abubokkor@gmail.com",
+        "name": "Ava Martinez",
+        "comment": "The build quality of this phone is excellent. It feels solid in hand and has a premium look and feel. The attention to detail is impressive.",
+        "star": 3
+      },
+      {
+        "img": "https://i.ibb.co/3NwH3PK/user.jpg",
+        "email": "rabby@gmail.com",
+        "name": "Noah Johnson",
+        "comment": "The battery life on this phone is impressive. Even with heavy usage, I can go through a full day without needing to recharge.",
+        "star": 4
+      }
+    ]
+  },
+  {
+    "name": "Google Pixel 7 Pro",
+    "img": "https://i.ibb.co/fYGGywN/Google-Pixel-7-Pro.jpg",
+    "category": "mobile&tablets",
+    "details": "The Google Pixel 7 Pro is a high-end smartphone that was released in October 2022. It has a 6.7-inch OLED display, a powerful Google Tensor G2 processor, and a triple-lens rear camera system. The Pixel 7 Pro also has a long-lasting battery and a clean, simple Android operating system.",
+    "points": "6.7-inch OLED display. Google Tensor G2 processor. 50MP triple-lens rear camera system. 11.1MP front-facing camera. 5000mAh battery. Android 13 operating system",
+    "amount": "85,000",
+    "comments": [
+      {
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "razu@gmail.com",
+        "name": "Sophia Lewis",
+        "comment": "The user interface is intuitive and user-friendly. Navigating through apps and settings is a breeze, making it a joy to use on a daily basis.",
+        "star": 4
+      },
+      {
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "tonmoy@gmail.com",
+        "name": "Lucas Hernandez",
+        "comment": "I appreciate the expandable storage option on this phone. It allows me to store a large amount of data without worrying about running out of space.",
+        "star": 4
+      },
+      {
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "abubokkor@gmail.com",
+        "name": "Mia Wilson",
+        "comment": "The customer support for this phone is fantastic. Whenever I have any questions or issues, the support team is prompt and helpful in resolving them.",
+        "star": 2
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14 Pro Max",
+    "img": "https://i.ibb.co/hcyv9cB/i-Phone-14-Pro-Max.jpg",
+    "category": "mobile&tablets",
+    "details": "The iPhone 14 Pro Max is a high-end smartphone that was released in September 2022. It has a 6.7-inch OLED display, a powerful A16 Bionic processor, and a triple-lens rear camera system. The iPhone 14 Pro Max also has a long-lasting battery and a water-resistant design.",
+    "points": "6.7-inch OLED display. A16 Bionic processor. 48MP triple-lens rear camera system. 12MP front-facing camera. 4352mAh battery. iOS 16 operating system . High price tag. No expandable storage. No headphone jack. Some users have reported bugs and glitches",
+    "amount": "201,599",
+    "comments": [
+      {
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "razu@gmail.com",
+        "name": "Sophia Lewis",
+        "comment": "I absolutely love this phone! The camera quality is outstanding, and the battery life is impressive. It's sleek, fast, and has all the features I need.",
+        "star": 4
+      },
+      {
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "tonmoy@gmail.com",
+        "name": "Lucas Hernandez",
+        "comment": "The display on this phone is stunning! The colors are vibrant, and the clarity is remarkable. I enjoy watching videos and playing games on it",
+        "star": 3
+      },
+      {
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "abubokkor@gmail.com",
+        "name": "Mia Wilson",
+        "comment": "The fingerprint scanner works flawlessly, and the face unlock feature is super convenient. It provides excellent security for my device.",
+        "star": 4
+      }
+    ]
+  },
+  {
+    "name": "Samsung Galaxy S23 Ultra",
+    "img": "https://i.ibb.co/rdXcwc0/samsung-galaxy-s23-ultra.jpg",
+    "category": "mobile&tablets",
+    "details": "The Samsung Galaxy S23 Ultra is a high-end smartphone that was released in February 2023. It has a 6.8-inch AMOLED display, a powerful Snapdragon 8 Gen 2 processor, and a quad-lens rear camera system. The Galaxy S23 Ultra also has a built-in S Pen stylus and a long-lasting battery.",
+    "points": "6.8-inch AMOLED display. Snapdragon 8 Gen 2 processor. 108MP quad-lens rear camera system. 40MP front-facing camera. 5000mAh battery. Android 12 operating system. Great camera system. Long-lasting battery. Built-in S Pen stylus. Clean, simple Android operating system. Up to 5 years of security updates",
+    "amount": "197,999",
+    "comments": [
+      {
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "razu@gmail.com",
+        "name": "Emma Sullivan",
+        "comment": "I'm amazed by the speed and performance of this phone. It handles multitasking effortlessly, and the apps run smoothly without any lag.",
+        "star": 5
+      },
+      {
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "tonmoy@gmail.com",
+        "name": "Liam Nguyen",
+        "comment": "The audio quality on this phone is top-notch. Whether I'm listening to music or watching movies, the sound is crystal clear and immersive.",
+        "star": 5
+      },
+      {
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "abubokkor@gmail.com",
+        "name": "Ava Martinez",
+        "comment": "The build quality of this phone is excellent. It feels solid in hand and has a premium look and feel. The attention to detail is impressive.",
+        "star": 3
+      },
+      {
+        "img": "https://i.ibb.co/3NwH3PK/user.jpg",
+        "email": "rabby@gmail.com",
+        "name": "Noah Johnson",
+        "comment": "The battery life on this phone is impressive. Even with heavy usage, I can go through a full day without needing to recharge.",
+        "star": 4
+      }
+    ]
+  },
+  {
+    "name": "OnePlus 11 Pro",
+    "img": "https://i.ibb.co/C7Wk102/One-Plus-11.jpg",
+    "category": "mobile&tablets",
+    "details": "The OnePlus 11 Pro is a high-end smartphone that was released in March 2023. It has a 6.7-inch AMOLED display, a powerful Snapdragon 8 Gen 2 processor, and a triple-lens rear camera system. The OnePlus 11 Pro also has a fast charging system and a clean, simple Android operating system.",
+    "points": "6.7-inch AMOLED display. Snapdragon 8 Gen 2 processor. 50MP triple-lens rear camera system. 32MP front-facing camera. 5000mAh battery. Android 13 operating system. Great camera system. Long-lasting battery. Fast charging system. Clean, simple Android operating system. Up to 4 years of software updates",
+    "amount": "95,000",
+    "comments": [
+      {
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "razu@gmail.com",
+        "name": "Sophia Lewis",
+        "comment": "The user interface is intuitive and user-friendly. Navigating through apps and settings is a breeze, making it a joy to use on a daily basis.",
+        "star": 4
+      },
+      {
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "tonmoy@gmail.com",
+        "name": "Lucas Hernandez",
+        "comment": "I appreciate the expandable storage option on this phone. It allows me to store a large amount of data without worrying about running out of space.",
+        "star": 4
+      },
+      {
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "abubokkor@gmail.com",
+        "name": "Mia Wilson",
+        "comment": "The customer support for this phone is fantastic. Whenever I have any questions or issues, the support team is prompt and helpful in resolving them.",
+        "star": 2
+      }
+    ]
+  },
+  {
+    "name": "Xiaomi 13 Pro",
+    "img": "https://i.ibb.co/HBpjMdB/Xiaomi-13-Pro.jpg",
+    "category": "mobile&tablets",
+    "details": "The Xiaomi 13 Pro is a high-end smartphone that was released in December 2022. It has a 6.73-inch AMOLED display, a powerful Snapdragon 8 Gen 2 processor, and a triple-lens rear camera system. The Xiaomi 13 Pro also has a long-lasting battery and a fast charging system.",
+    "points": "6.73-inch AMOLED display. Snapdragon 8 Gen 2 processor. 50MP triple-lens rear camera system. 32MP front-facing camera. 4820mAh battery. Android 13 operating system. 120W fast charging",
+    "amount": "133,000",
+    "comments": [
+      {
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "razu@gmail.com",
+        "name": "Sophia Lewis",
+        "comment": "I absolutely love this phone! The camera quality is outstanding, and the battery life is impressive. It's sleek, fast, and has all the features I need.",
+        "star": 4
+      },
+      {
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "tonmoy@gmail.com",
+        "name": "Lucas Hernandez",
+        "comment": "The display on this phone is stunning! The colors are vibrant, and the clarity is remarkable. I enjoy watching videos and playing games on it",
+        "star": 3
+      },
+      {
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "abubokkor@gmail.com",
+        "name": "Mia Wilson",
+        "comment": "The fingerprint scanner works flawlessly, and the face unlock feature is super convenient. It provides excellent security for my device.",
+        "star": 4
+      }
+    ]
+  },
+  {
+    "name": "Asus ROG Phone 7 Pro",
+    "img": "https://i.ibb.co/6Hj7gJX/Asus-ROG-Phone-7-Pro.jpg",
+    "category": "mobile&tablets",
+    "details": "The Asus ROG Phone 7 Pro is a gaming smartphone that was released in March 2023. It has a 6.78-inch AMOLED display, a powerful Snapdragon 8+ Gen 1 processor, and a triple-lens rear camera system. The Asus ROG Phone 7 Pro also has a long-lasting battery and a fast charging system.",
+    "points": "6.78-inch AMOLED display. Snapdragon 8+ Gen 1 processor. 50MP triple-lens rear camera system. 12MP front-facing camera. 6000mAh battery. Android 12 operating system. 65W fast charging",
+    "amount": "",
+    "comments": [
+      {
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "razu@gmail.com",
+        "name": "Emma Sullivan",
+        "comment": "I'm amazed by the speed and performance of this phone. It handles multitasking effortlessly, and the apps run smoothly without any lag.",
+        "star": 5
+      },
+      {
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "tonmoy@gmail.com",
+        "name": "Liam Nguyen",
+        "comment": "The audio quality on this phone is top-notch. Whether I'm listening to music or watching movies, the sound is crystal clear and immersive.",
+        "star": 5
+      },
+      {
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "abubokkor@gmail.com",
+        "name": "Ava Martinez",
+        "comment": "The build quality of this phone is excellent. It feels solid in hand and has a premium look and feel. The attention to detail is impressive.",
+        "star": 3
+      },
+      {
+        "img": "https://i.ibb.co/3NwH3PK/user.jpg",
+        "email": "rabby@gmail.com",
+        "name": "Noah Johnson",
+        "comment": "The battery life on this phone is impressive. Even with heavy usage, I can go through a full day without needing to recharge.",
+        "star": 4
+      }
+    ]
+  }
+]

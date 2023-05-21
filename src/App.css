@@ -1,3 +1,14 @@
+body {
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+/* banner.jsx a 51 number line  */
 .banner-hover-animation:hover .banner-animation {
   margin-right: 10px !important;
+}
+
+/*  */
+.scaleHoverSection:hover .scaleHoverObject {
+  transform: scale(1.5);
 }

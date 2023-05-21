@@ -1,0 +1,466 @@
+[
+  {
+    "name": "MENS PRIMUM KURTA SET",
+    "images": [
+      {
+        "original": "https://i.ibb.co/LzFKRLY/p1-1.jpg",
+        "thumbnail": "https://i.ibb.co/LzFKRLY/p1-1.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/LJc2fPg/p1-2.jpg",
+        "thumbnail": "https://i.ibb.co/LJc2fPg/p1-2.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/tDVvJP6/p1-3.jpg",
+        "thumbnail": "https://i.ibb.co/tDVvJP6/p1-3.jpg"
+      }
+    ],
+    "category": "mens_panjabi",
+    "brand-name": "Fablya",
+    "details": "",
+    "point": "",
+    "amount": "21900",
+    "offPrice": "25000",
+    "color": "Blue",
+    "size": ["S", "M", "L", "XL", "XXL"],
+    "comments": [
+      {
+        "name": "Ethan Thompson",
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "ethan_thom@gmail.com",
+        "number": "+8801712345678",
+        "comment": "I absolutely love this dress! The fabric is soft, and the fit is perfect. It's my new favorite go-to outfit."
+      },
+      {
+        "name": "Olivia Rodriguez",
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "oliva_rod@gmail.com",
+        "number": "+8801912345678",
+        "comment": "The quality of this shirt is exceptional. The stitching is precise, and the material feels luxurious against the skin."
+      },
+      {
+        "name": "Benjamin Patel",
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "benjamin_patel@gmail.com",
+        "number": "+8801812345678",
+        "comment": "I received so many compliments when I wore this suit. The design is modern and stylish, and the attention to detail is remarkable."
+      }
+    ]
+  },
+  {
+    "name": "WOMENS WOVEN LONG KURTI",
+    "images": [
+      {
+        "original": "https://i.ibb.co/N13ZPT8/p1-1.jpg",
+        "thumbnail": "https://i.ibb.co/N13ZPT8/p1-1.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/xHPJGf2/p1-2.jpg",
+        "thumbnail": "https://i.ibb.co/xHPJGf2/p1-2.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/Z231Jwm/p1-3.jpg",
+        "thumbnail": "https://i.ibb.co/Z231Jwm/p1-3.jpg"
+      }
+    ],
+    "category": "womens_kurti",
+    "brand-name": "Fablya",
+    "details": "",
+    "point": "",
+    "amount": "2650",
+    "offPrice": "3000",
+    "color": "Coffee",
+    "size": ["S", "M", "L", "XL", "XXL"],
+    "comments": [
+      {
+        "name": "Emma Sullivan",
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "emma_sull@gmail.com",
+        "number": "+8801612345678",
+        "comment": "These jeans are incredibly comfortable. They have just the right amount of stretch and fit like a dream."
+      },
+      {
+        "name": "Liam Nguyen",
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "liam@gmail.com",
+        "number": "+8801512345678",
+        "comment": "I'm impressed with the durability of this jacket. It keeps me warm and holds up well, even in harsh weather conditions."
+      },
+      {
+        "name": "Ava Martinez",
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "ava_mar@gmail.com",
+        "number": "+8801412345678",
+        "comment": "This blouse is so versatile. It can be dressed up or down, making it a staple piece in my wardrobe."
+      }
+    ]
+  },
+  {
+    "name": "WOMENS WOVEN 3PCS",
+    "images": [
+      {
+        "original": "https://i.ibb.co/9bCbLRF/p1-1.jpg",
+        "thumbnail": "https://i.ibb.co/9bCbLRF/p1-1.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/BnZYV4H/p1-3.jpg",
+        "thumbnail": "https://i.ibb.co/BnZYV4H/p1-3.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/3vLp7z7/p1-2.jpg",
+        "thumbnail": "https://i.ibb.co/3vLp7z7/p1-2.jpg"
+      }
+    ],
+    "category": "womens_3pcs",
+    "brand-name": "Fablya",
+    "details": "",
+    "point": "",
+    "amount": "4550",
+    "offPrice": "5000",
+    "color": "Magenta",
+    "size": ["S", "M", "L", "XL", "XXL"],
+    "comments": [
+      {
+        "name": "Noah Johnson",
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "noah_jhon@gmail.com",
+        "number": "+8801312345678",
+        "comment": "The print on this t-shirt is unique and eye-catching. It adds a fun and playful element to my casual outfits."
+      },
+      {
+        "name": "Sophia Lewis",
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "sophia@gmail.com",
+        "number": "+8801212345678",
+        "comment": "I was hesitant about buying online, but this skirt exceeded my expectations. The color is vibrant, and the sizing is accurate."
+      },
+      {
+        "name": "Lucas Hernandez",
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "lucas_hernan@gmail.com",
+        "number": "+8801112345678",
+        "comment": "These shoes are not only fashionable but also incredibly comfortable. I can wear them all day without any discomfort."
+      }
+    ]
+  },
+  {
+    "name": "BOYS CASUAL SHIRT",
+    "images": [
+      {
+        "original": "https://i.ibb.co/HTN1mc0/p1-2.jpg",
+        "thumbnail": "https://i.ibb.co/HTN1mc0/p1-2.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/8dNJPNN/p1-1.jpg",
+        "thumbnail": "https://i.ibb.co/8dNJPNN/p1-1.jpg"
+      }
+    ],
+    "category": "boys_collection",
+    "brand-name": "Fablya",
+    "details": "",
+    "point": "",
+    "amount": "990",
+    "offPrice": "1500",
+    "color": "Cyan",
+    "size": ["5 6Y", "7 8Y", "3 4Y", "9 10Y"],
+    "comments": [
+      {
+        "name": "Ethan Thompson",
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "ethan_thom@gmail.com",
+        "number": "+8801712345678",
+        "comment": "I absolutely love this dress! The fabric is soft, and the fit is perfect. It's my new favorite go-to outfit."
+      },
+      {
+        "name": "Olivia Rodriguez",
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "oliva_rod@gmail.com",
+        "number": "+8801912345678",
+        "comment": "The quality of this shirt is exceptional. The stitching is precise, and the material feels luxurious against the skin."
+      },
+      {
+        "name": "Benjamin Patel",
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "benjamin_patel@gmail.com",
+        "number": "+8801812345678",
+        "comment": "I received so many compliments when I wore this suit. The design is modern and stylish, and the attention to detail is remarkable."
+      }
+    ]
+  },
+  {
+    "name": "GIRLS WOVERN KURTI",
+    "images": [
+      {
+        "original": "https://i.ibb.co/Pgn2z18/p1-2.jpg",
+        "thumbnail": "https://i.ibb.co/Pgn2z18/p1-2.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/hXkRFf0/p1-1.jpg",
+        "thumbnail": "https://i.ibb.co/hXkRFf0/p1-1.jpg"
+      }
+    ],
+    "category": "girl_collection",
+    "brand-name": "Fablya",
+    "details": "",
+    "point": "",
+    "amount": "1850",
+    "offPrice": "2400",
+    "color": "Purple",
+    "size": ["5 6Y", "7 8Y", "3 4Y", "9 10Y", "11 12Y", "13 14Y"],
+    "comments": [
+      {
+        "name": "Emma Sullivan",
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "emma_sull@gmail.com",
+        "number": "+8801612345678",
+        "comment": "These jeans are incredibly comfortable. They have just the right amount of stretch and fit like a dream."
+      },
+      {
+        "name": "Liam Nguyen",
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "liam@gmail.com",
+        "number": "+8801512345678",
+        "comment": "I'm impressed with the durability of this jacket. It keeps me warm and holds up well, even in harsh weather conditions."
+      },
+      {
+        "name": "Ava Martinez",
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "ava_mar@gmail.com",
+        "number": "+8801412345678",
+        "comment": "This blouse is so versatile. It can be dressed up or down, making it a staple piece in my wardrobe."
+      }
+    ]
+  },
+  {
+    "name": "MENS CASUAL SHIRT (F/S)",
+    "images": [
+      {
+        "original": "https://i.ibb.co/wg1snXn/p1-2.jpg",
+        "thumbnail": "https://i.ibb.co/wg1snXn/p1-2.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/HFYnSD3/p1-1.jpg",
+        "thumbnail": "https://i.ibb.co/HFYnSD3/p1-1.jpg"
+      }
+    ],
+    "category": "mens",
+    "brand-name": "Fablya",
+    "details": "",
+    "point": "",
+    "amount": "1990",
+    "offPrice": "2900",
+    "color": "Olive",
+    "size": ["S", "M", "L", "XL", "XXL"],
+    "comments": [
+      {
+        "name": "Noah Johnson",
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "noah_jhon@gmail.com",
+        "number": "+8801312345678",
+        "comment": "The print on this t-shirt is unique and eye-catching. It adds a fun and playful element to my casual outfits."
+      },
+      {
+        "name": "Sophia Lewis",
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "sophia@gmail.com",
+        "number": "+8801212345678",
+        "comment": "I was hesitant about buying online, but this skirt exceeded my expectations. The color is vibrant, and the sizing is accurate."
+      },
+      {
+        "name": "Lucas Hernandez",
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "lucas_hernan@gmail.com",
+        "number": "+8801112345678",
+        "comment": "These shoes are not only fashionable but also incredibly comfortable. I can wear them all day without any discomfort."
+      }
+    ]
+  },
+  {
+    "name": "WOMENS WOVEN SHORT TOPS",
+    "images": [
+      {
+        "original": "https://i.ibb.co/r5HXPfB/p1-2.jpg",
+        "thumbnail": "https://i.ibb.co/r5HXPfB/p1-2.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/fqCPnwm/p1-3.jpg",
+        "thumbnail": "https://i.ibb.co/fqCPnwm/p1-3.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/D50gFTJ/p1-1.jpg",
+        "thumbnail": "https://i.ibb.co/D50gFTJ/p1-1.jpg"
+      }
+    ],
+    "category": "womens",
+    "brand-name": "Fablya",
+    "details": "",
+    "point": "",
+    "amount": "1750",
+    "offPrice": "2390",
+    "color": "Maroon",
+    "size": ["S", "M", "L", "XL"],
+    "comments": [
+      {
+        "name": "Ethan Thompson",
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "ethan_thom@gmail.com",
+        "number": "+8801712345678",
+        "comment": "I absolutely love this dress! The fabric is soft, and the fit is perfect. It's my new favorite go-to outfit."
+      },
+      {
+        "name": "Olivia Rodriguez",
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "oliva_rod@gmail.com",
+        "number": "+8801912345678",
+        "comment": "The quality of this shirt is exceptional. The stitching is precise, and the material feels luxurious against the skin."
+      },
+      {
+        "name": "Benjamin Patel",
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "benjamin_patel@gmail.com",
+        "number": "+8801812345678",
+        "comment": "I received so many compliments when I wore this suit. The design is modern and stylish, and the attention to detail is remarkable."
+      }
+    ]
+  },
+  {
+    "name": "BOYS KNIT FASHION POLO",
+    "images": [
+      {
+        "original": "https://i.ibb.co/VHVgGG3/p1-2.jpg",
+        "thumbnail": "https://i.ibb.co/VHVgGG3/p1-2.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/9NrgSpp/p1-1.jpg",
+        "thumbnail": "https://i.ibb.co/9NrgSpp/p1-1.jpg"
+      }
+    ],
+    "category": "kids",
+    "brand-name": "Fablya",
+    "details": "",
+    "point": "",
+    "amount": "1040",
+    "offPrice": "1490",
+    "color": "Burnt Sienna",
+    "size": ["5 6Y", "7 8Y", "3 4Y", "9 10Y", "11 12Y", "13 14Y"],
+    "comments": [
+      {
+        "name": "Emma Sullivan",
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "emma_sull@gmail.com",
+        "number": "+8801612345678",
+        "comment": "These jeans are incredibly comfortable. They have just the right amount of stretch and fit like a dream."
+      },
+      {
+        "name": "Liam Nguyen",
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "liam@gmail.com",
+        "number": "+8801512345678",
+        "comment": "I'm impressed with the durability of this jacket. It keeps me warm and holds up well, even in harsh weather conditions."
+      },
+      {
+        "name": "Ava Martinez",
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "ava_mar@gmail.com",
+        "number": "+8801412345678",
+        "comment": "This blouse is so versatile. It can be dressed up or down, making it a staple piece in my wardrobe."
+      }
+    ]
+  },
+  {
+    "name": "MENS CLASSIC KURTA",
+    "images": [
+      {
+        "original": "https://i.ibb.co/jb74LMt/p3-1.jpg",
+        "thumbnail": "https://i.ibb.co/jb74LMt/p3-1.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/8z9vX6f/p3-2.jpg",
+        "thumbnail": "https://i.ibb.co/8z9vX6f/p3-2.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/gSZ7rcK/p3-3.jpg",
+        "thumbnail": "https://i.ibb.co/gSZ7rcK/p3-3.jpg"
+      }
+    ],
+    "category": "mens_panjabi",
+    "brand-name": "Fablya",
+    "details": "",
+    "point": "",
+    "amount": "2790",
+    "offPrice": "3500",
+    "color": "Olive",
+    "size": ["S", "M", "L", "XL", "XXL"],
+    "comments": [
+      {
+        "name": "Noah Johnson",
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "noah_jhon@gmail.com",
+        "number": "+8801312345678",
+        "comment": "The print on this t-shirt is unique and eye-catching. It adds a fun and playful element to my casual outfits."
+      },
+      {
+        "name": "Sophia Lewis",
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "sophia@gmail.com",
+        "number": "+8801212345678",
+        "comment": "I was hesitant about buying online, but this skirt exceeded my expectations. The color is vibrant, and the sizing is accurate."
+      },
+      {
+        "name": "Lucas Hernandez",
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "lucas_hernan@gmail.com",
+        "number": "+8801112345678",
+        "comment": "These shoes are not only fashionable but also incredibly comfortable. I can wear them all day without any discomfort."
+      }
+    ]
+  },
+  {
+    "name": "MENS DENIM SKINNY FIT TROUSER",
+    "images": [
+      {
+        "original": "https://i.ibb.co/yBNCvC7/p2-1.jpg",
+        "thumbnail": "https://i.ibb.co/yBNCvC7/p2-1.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/7nMNL4r/p2-2.jpg",
+        "thumbnail": "https://i.ibb.co/7nMNL4r/p2-2.jpg"
+      },
+      {
+        "original": "https://i.ibb.co/d6ydh46/p2-3.jpg",
+        "thumbnail": "https://i.ibb.co/d6ydh46/p2-3.jpg"
+      }
+    ],
+    "category": "mens",
+    "brand-name": "Fablya",
+    "details": "",
+    "point": "",
+    "amount": "2390",
+    "offPrice": "2990",
+    "color": "Black Tie",
+    "size": ["S", "M", "L", "XL", "XXL"],
+    "comments": [
+      {
+        "name": "Ethan Thompson",
+        "img": "https://i.ibb.co/mycK5xq/young-man.png",
+        "email": "ethan_thom@gmail.com",
+        "number": "+8801712345678",
+        "comment": "I absolutely love this dress! The fabric is soft, and the fit is perfect. It's my new favorite go-to outfit."
+      },
+      {
+        "name": "Olivia Rodriguez",
+        "img": "https://i.ibb.co/Chv3DNc/profile.png",
+        "email": "oliva_rod@gmail.com",
+        "number": "+8801912345678",
+        "comment": "The quality of this shirt is exceptional. The stitching is precise, and the material feels luxurious against the skin."
+      },
+      {
+        "name": "Benjamin Patel",
+        "img": "https://i.ibb.co/8YWQfCB/man.png",
+        "email": "benjamin_patel@gmail.com",
+        "number": "+8801812345678",
+        "comment": "I received so many compliments when I wore this suit. The design is modern and stylish, and the attention to detail is remarkable."
+      }
+    ]
+  }
+]
