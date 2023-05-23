@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import webLogo from "../Assets/web-logo2.png";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Context/AuthProvider";
 // balgruf
 
 const Navbar = () => {
   const [dropHide, setDropHide] = useState(false);
+  const { user } = useContext(AuthContext);
   return (
     <div>
       {/* navbar logo, search bar, cart, login */}
@@ -65,10 +67,16 @@ const Navbar = () => {
                 </div>
                 <p>Cart</p>
               </div>
-              <Link to={"/login"} className="flex items-center text-xl">
-                <i className="fa-solid fa-arrow-right-to-bracket text-2xl mr-2"></i>
-                <p>Login</p>
-              </Link>
+              {user?.uid ? (
+                <Link to={"/profile"} className="flex items-center text-xl">
+                  <i className="fa-solid fa-user text-2xl mr-2"></i>
+                </Link>
+              ) : (
+                <Link to={"/login"} className="flex items-center text-xl">
+                  <i className="fa-solid fa-arrow-right-to-bracket text-2xl mr-2"></i>
+                  <p>Login</p>
+                </Link>
+              )}
             </div>
           </div>
         </div>

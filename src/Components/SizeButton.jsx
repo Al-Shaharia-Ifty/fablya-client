@@ -6,6 +6,7 @@ const SizeButton = ({ productDetails, setPSize }) => {
       <p>Size: </p>
       {productDetails?.size?.map((s, i) => (
         <button
+          key={i}
           onClick={(e) => setPSize(e.target.innerText)}
           className="btn btn-outline mr-2 md:mr-0 mt-2 md:mt-0"
         >

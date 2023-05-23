@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
-import Loading from "../Shear/Loading";
+import Loading from "../Shared/Loading";
 import ImageGallery from "react-image-gallery";
 import SizeButton from "../Components/SizeButton";
 
