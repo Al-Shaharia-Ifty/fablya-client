@@ -2,11 +2,16 @@ import React, { useContext, useState } from "react";
 import webLogo from "../Assets/web-logo2.png";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
-// balgruf
 
 const Navbar = () => {
   const [dropHide, setDropHide] = useState(false);
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then()
+      .catch((err) => console.log(err.message));
+  };
   return (
     <div>
       {/* navbar logo, search bar, cart, login */}
@@ -48,7 +53,7 @@ const Navbar = () => {
             </div>
 
             {/* cart */}
-            <div className="flex-1 flex justify-end xl:gap-4 pb-3 md:py-0">
+            <div className="flex-1 flex justify-end xl:gap-4 pb-3 md:py-0 pr-3 md:pr-0">
               <div className="flex items-center lg:text-xl md:text-md">
                 <div className="relative">
                   <p className="absolute bg-red-500 rounded-full px-1.5 text-sm top-0 right-0">
@@ -68,9 +73,15 @@ const Navbar = () => {
                 <p>Cart</p>
               </div>
               {user?.uid ? (
-                <Link to={"/profile"} className="flex items-center text-xl">
+                // <Link to={"/profile"} className="flex items-center text-xl">
+                // </Link>
+                <div
+                  onClick={handleLogOut}
+                  className="flex items-center lg:text-xl md:text-md mr-4"
+                >
                   <i className="fa-solid fa-user text-2xl mr-2"></i>
-                </Link>
+                  <p>Profile</p>
+                </div>
               ) : (
                 <Link to={"/login"} className="flex items-center text-xl">
                   <i className="fa-solid fa-arrow-right-to-bracket text-2xl mr-2"></i>
