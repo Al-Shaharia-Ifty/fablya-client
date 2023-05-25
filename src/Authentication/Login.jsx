@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
 
 const Login = () => {
@@ -39,7 +39,7 @@ const Login = () => {
             Login
           </NavLink>
           <NavLink
-            to={"/sign-up"}
+            to={"/sign_up"}
             className={({ isActive }) =>
               isActive
                 ? "text-red-500 xl:px-14 px-10 py-2 border-b-2 border-red-500"
@@ -55,8 +55,8 @@ const Login = () => {
           <div className="flex justify-between items-center">
             <h2 className="text-2xl">Login</h2>
             <div className="flex gap-2">
-              <i className="fa-brands border-2 rounded-full p-2 fa-google"></i>
-              <i className="fa-brands border-2 rounded-full p-2 fa-facebook"></i>
+              <i className="fa-brands border-2 rounded-full p-2 fa-google hover:bg-yellow-500 hover:text-white duration-300 hover:border-yellow-500"></i>
+              <i className="fa-brands border-2 rounded-full p-2 fa-facebook hover:bg-blue-500 hover:text-white duration-300 hover:border-blue-500"></i>
             </div>
           </div>
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -136,14 +136,17 @@ const Login = () => {
             <input
               type="submit"
               value="Login now"
-              className="btn border-0 w-full mt-5 bg-gradient-to-tr from-[#0F172A] to-[#374151]"
+              className="btn w-full mt-5 btn-outline text-gradient-to-tr from-[#0F172A] to-[#374151]"
             />
           </form>
+          <div className="divider">OR</div>
+          <Link
+            className="btn btn-outline w-full text-emerald-500 border-emerald-500"
+            to={"/login_with_phone"}
+          >
+            Continue with phone
+          </Link>
           <div className="mt-5 flex justify-between">
-            <div className="flex gap-2">
-              <input type="checkbox" name="Remember Me" id="" />
-              <p>Remember Me</p>
-            </div>
             <p>Forgot Password (modal)</p>
           </div>
         </div>
@@ -259,7 +262,7 @@ export default Login;
 //               <h2 className="text-2xl font-bold">Welcome to Login</h2>
 //               <p className="my-3">Don't have an account?</p>
 //               <Link
-//                 to={"/sign-up"}
+//                 to={"/sign_up"}
 //                 className="btn btn-outline text-white hover:bg-white hover:border-white hover:text-gray-500"
 //               >
 //                 Sign UP

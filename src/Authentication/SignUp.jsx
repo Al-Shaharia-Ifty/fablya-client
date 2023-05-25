@@ -11,10 +11,13 @@ const SignUp = () => {
     handleSubmit,
   } = useForm();
 
-  const { createUser } = useContext(AuthContext);
+  const { createUser, updateUser } = useContext(AuthContext);
 
-  const onSubmit = (data) => {
-    createUser(data.email, data.password)
+  const onSubmit = async (data) => {
+    const userInfo = {
+      displayName: data.name,
+    };
+    await createUser(data.email, data.password)
       .then((result) => {
         const user = result.user;
         console.log(user);
@@ -23,7 +26,15 @@ const SignUp = () => {
         setAccountError(err.message);
         console.log(err.message);
       });
+
+    await updateUser(userInfo)
+      .then(() => {
+        console.log("profile update");
+      })
+      .catch((err) => console.log(err));
+    console.log(userInfo);
   };
+
   return (
     <div>
       <div className="flex justify-center my-10 border-b-2 ">
@@ -39,7 +50,7 @@ const SignUp = () => {
             Login
           </NavLink>
           <NavLink
-            to={"/sign-up"}
+            to={"/sign_up"}
             className={({ isActive }) =>
               isActive
                 ? "text-red-500 xl:px-14 px-10 py-2 border-b-2 border-red-500"

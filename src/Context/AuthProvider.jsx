@@ -1,12 +1,13 @@
 import React, { createContext, useEffect, useState } from "react";
-import auth from "../firebase.init";
 import {
   // RecaptchaVerifier,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
+  updateProfile,
 } from "firebase/auth";
+import { auth } from "../firebase.init";
 
 export const AuthContext = createContext();
 
@@ -23,6 +24,12 @@ const AuthProvider = ({ children }) => {
   // login is with email
   const signIn = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
+  };
+
+  // update user
+  const updateUser = async (userInfo) => {
+    console.log(userInfo);
+    return await updateProfile(user, userInfo);
   };
 
   // sign out
@@ -44,6 +51,7 @@ const AuthProvider = ({ children }) => {
     signIn,
     logOut,
     user,
+    updateUser,
   };
 
   return (

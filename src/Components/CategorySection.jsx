@@ -125,7 +125,7 @@ const CategorySection = () => {
             </Link>
           </SwiperSlide>
           <SwiperSlide className="bg-stone-300 rounded-lg min-h-[250px] relative">
-            <Link to={"category/Womens"}>
+            <Link to={"category/womens"}>
               <div className="relative overflow-hidden">
                 <img
                   src={img7}

@@ -6,6 +6,7 @@ import { AuthContext } from "../Context/AuthProvider";
 const Navbar = () => {
   const [dropHide, setDropHide] = useState(false);
   const { user, logOut } = useContext(AuthContext);
+  console.log(user);
 
   const handleLogOut = () => {
     logOut()
@@ -73,15 +74,19 @@ const Navbar = () => {
                 <p>Cart</p>
               </div>
               {user?.uid ? (
-                // <Link to={"/profile"} className="flex items-center text-xl">
-                // </Link>
-                <div
-                  onClick={handleLogOut}
-                  className="flex items-center lg:text-xl md:text-md mr-4"
-                >
-                  <i className="fa-solid fa-user text-2xl mr-2"></i>
-                  <p>Profile</p>
-                </div>
+                <>
+                  <Link
+                    to={"/profile"}
+                    className="flex items-center text-xl"
+                  ></Link>
+                  <div
+                    onClick={handleLogOut}
+                    className="flex items-center lg:text-xl md:text-md mr-4"
+                  >
+                    <i className="fa-solid fa-user text-2xl mr-2"></i>
+                    <p>Profile</p>
+                  </div>
+                </>
               ) : (
                 <Link to={"/login"} className="flex items-center text-xl">
                   <i className="fa-solid fa-arrow-right-to-bracket text-2xl mr-2"></i>
@@ -135,7 +140,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       onClick={() => setDropHide(false)}
-                      to={"/mans/t-shirt"}
+                      to={"/mans/t_shirt"}
                     >
                       T-SHIRT
                     </Link>
@@ -143,7 +148,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       onClick={() => setDropHide(false)}
-                      to={"/mans/tank-top"}
+                      to={"/mans/tank_top"}
                     >
                       TANK TOP
                     </Link>
