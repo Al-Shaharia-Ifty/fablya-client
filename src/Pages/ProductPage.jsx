@@ -63,7 +63,12 @@ const ProductPage = () => {
             </div>
           </div>
           <div className="lg:flex mt-5 gap-5">
-            <div className="lg:w-1/2 w-full">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aso-delay="500"
+              className="lg:w-1/2 w-full"
+            >
               <ImageGallery
                 thumbnailPosition={"left"}
                 showFullscreenButton={false}
@@ -73,19 +78,41 @@ const ProductPage = () => {
               />
             </div>
             <div className="lg:w-1/2 w-full mt-5 lg:mt-0">
-              <h1 className="text-2xl font-normal">{productDetails?.name}</h1>
-              <div className="text-3xl font-bold mt-2">
+              <h1
+                data-aos="fade-left"
+                data-aos-duration="600"
+                data-aso-delay="300"
+                className="text-2xl font-normal"
+              >
+                {productDetails?.name}
+              </h1>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="700"
+                data-aso-delay="400"
+                className="text-3xl font-bold mt-2"
+              >
                 ৳ <del className="text-red-500">{productDetails?.offPrice}</del>{" "}
                 {productDetails?.amount}
               </div>
-              <div className="border-dashed border-y-2 border-gray-300 py-3 mb-5 text-xl font-normal mt-5">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aso-delay="500"
+                className="border-dashed border-y-2 border-gray-300 py-3 mb-5 text-xl font-normal mt-5"
+              >
                 <p>Color: {productDetails?.color}</p>
               </div>
 
               {productSize}
               {/* component */}
               <SizeButton productDetails={productDetails} setPSize={setPSize} />
-              <div className="flex mt-5 text-xl items-center gap-3">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="900"
+                data-aso-delay="700"
+                className="flex mt-5 text-xl items-center gap-3"
+              >
                 <p>Quantity </p>
                 <button
                   onClick={() => {
@@ -120,7 +147,12 @@ const ProductPage = () => {
                   +
                 </button>
               </div>
-              <div className="mt-5 flex gap-3">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aso-delay="800"
+                className="mt-5 flex gap-3"
+              >
                 <button className="btn btn-outline text-green-500 hover:bg-green-500 hover:text-white hover:border-green-500">
                   Add to cart
                 </button>

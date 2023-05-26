@@ -15,8 +15,13 @@ import { Pagination, EffectCreative, Autoplay } from "swiper";
 const Banner = () => {
   return (
     <div>
-      <div className="grid xl:grid-cols-4 grid-cols-2 2xl:mx-20 xl:mx-10 mx-5 my-5 mt-10 gap-4">
-        <div className="col-span-2 row-span-2 rounded-lg overflow-hidden">
+      <div className="grid xl:grid-cols-4 grid-cols-2 2xl:mx-20 xl:mx-10 mx-5 my-5 mt-10 gap-4 overflow-hidden">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          className="col-span-2 row-span-2 rounded-lg overflow-hidden"
+        >
           <Swiper
             autoplay={{
               delay: 5000,
@@ -47,7 +52,12 @@ const Banner = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="rounded-lg overflow-hidden banner-hover-animation flex items-center bg-sky-300">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          className="rounded-lg overflow-hidden banner-hover-animation flex items-center bg-sky-300"
+        >
           <div className="md:p-8 p-4 md:pr-0 w-full justify-between md:flex">
             <div className="md:w-1/2">
               <h2>BAST SALE</h2>
@@ -61,7 +71,12 @@ const Banner = () => {
             />
           </div>
         </div>
-        <div className="rounded-lg overflow-hidden banner-hover-animation flex items-center bg-orange-200">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          className="rounded-lg overflow-hidden banner-hover-animation flex items-center bg-orange-200"
+        >
           <div className="md:p-8 p-4 md:pr-0 w-full justify-between md:flex">
             <div className="md:w-1/2">
               <h2>NEW ARRIVAL</h2>
@@ -75,7 +90,12 @@ const Banner = () => {
             />
           </div>
         </div>
-        <div className="rounded-lg overflow-hidden banner-hover-animation flex items-center bg-emerald-300">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          className="rounded-lg overflow-hidden banner-hover-animation flex items-center bg-emerald-300"
+        >
           <div className="md:p-8 p-4 md:pr-0 w-full justify-between md:flex">
             <div className="md:w-1/2">
               <h2>15% OFF</h2>
@@ -89,7 +109,12 @@ const Banner = () => {
             />
           </div>
         </div>
-        <div className="rounded-lg overflow-hidden banner-hover-animation flex items-center bg-yellow-200">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          className="rounded-lg overflow-hidden banner-hover-animation flex items-center bg-yellow-200"
+        >
           <div className="md:p-8 p-4 md:pr-0 w-full justify-between md:flex">
             <div className="md:w-1/2">
               <h2>FREE ENGRAVING</h2>

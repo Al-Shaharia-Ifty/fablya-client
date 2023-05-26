@@ -1,9 +1,13 @@
 import React, { createContext, useEffect, useState } from "react";
 import {
+  FacebookAuthProvider,
+  GoogleAuthProvider,
   // RecaptchaVerifier,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  signInWithPhoneNumber,
+  signInWithPopup,
   signOut,
   updateProfile,
 } from "firebase/auth";
@@ -15,6 +19,9 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   // phone auth
+  const createPhoneUser = (phoneNumber, appVerifier) => {
+    return signInWithPhoneNumber(auth, phoneNumber, appVerifier);
+  };
 
   // create user
   const createUser = (email, password) => {
@@ -24,6 +31,18 @@ const AuthProvider = ({ children }) => {
   // login is with email
   const signIn = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
+  };
+
+  // login with google
+  const googleUser = () => {
+    const provider = new GoogleAuthProvider();
+    return signInWithPopup(auth, provider);
+  };
+
+  // login with Facebook
+  const facebookUser = () => {
+    const provider = new FacebookAuthProvider();
+    return signInWithPopup(auth, provider);
   };
 
   // update user
@@ -52,6 +71,9 @@ const AuthProvider = ({ children }) => {
     logOut,
     user,
     updateUser,
+    createPhoneUser,
+    facebookUser,
+    googleUser,
   };
 
   return (

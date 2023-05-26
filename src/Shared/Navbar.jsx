@@ -6,7 +6,6 @@ import { AuthContext } from "../Context/AuthProvider";
 const Navbar = () => {
   const [dropHide, setDropHide] = useState(false);
   const { user, logOut } = useContext(AuthContext);
-  console.log(user);
 
   const handleLogOut = () => {
     logOut()
@@ -80,7 +79,10 @@ const Navbar = () => {
                     className="flex items-center text-xl"
                   ></Link>
                   <div
-                    onClick={handleLogOut}
+                    onClick={() => {
+                      handleLogOut();
+                      localStorage.removeItem("accessToken");
+                    }}
                     className="flex items-center lg:text-xl md:text-md mr-4"
                   >
                     <i className="fa-solid fa-user text-2xl mr-2"></i>

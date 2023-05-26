@@ -2,7 +2,12 @@ import React from "react";
 
 const SizeButton = ({ productDetails, setPSize }) => {
   return (
-    <div className="text-xl flex-wrap md:flex items-center gap-3">
+    <div
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aso-delay="600"
+      className="text-xl flex-wrap md:flex items-center gap-3"
+    >
       <p>Size: </p>
       {productDetails?.size?.map((s, i) => (
         <button

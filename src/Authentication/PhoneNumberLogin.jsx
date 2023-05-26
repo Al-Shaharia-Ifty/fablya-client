@@ -1,22 +1,31 @@
-import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-import React, { useState } from "react";
+import { RecaptchaVerifier } from "firebase/auth";
+import React, { useContext, useState } from "react";
 import { auth } from "../firebase.init";
+import { AuthContext } from "../Context/AuthProvider";
+import { useLocation, useNavigate } from "react-router-dom";
+import LoadingButton from "../Shared/LoadingButton";
+
 const PhoneNumberLogin = () => {
   const countryCode = "+880";
 
-  const [phoneNumber, setPhoneNumber] = useState(countryCode);
+  const navigate = useNavigate();
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
+
+  const { createPhoneUser } = useContext(AuthContext);
+
   const [expandForm, setExpandForm] = useState(false);
   const [OTP, setOTP] = useState("");
   const [phoneError, setPhoneError] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState(countryCode);
+  const [loading, setLoading] = useState(false);
 
   const genrateRecaptcha = () => {
     window.recaptchaVerifier = new RecaptchaVerifier(
       "recaptcha-container",
       {
         size: "invisible",
-        callback: (response) => {
-          // reCAPTCHA solved, allow signInWithPhoneNumber.
-        },
+        callback: (response) => {},
       },
       auth
     );
@@ -24,19 +33,15 @@ const PhoneNumberLogin = () => {
 
   const requestOTP = (e) => {
     e.preventDefault();
-    console.log(phoneNumber);
     if (phoneNumber.length >= 12) {
       setExpandForm(true);
       genrateRecaptcha();
       let appVerifier = window.recaptchaVerifier;
-      signInWithPhoneNumber(auth, phoneNumber, appVerifier)
+      createPhoneUser(phoneNumber, appVerifier)
         .then((confirmationResult) => {
           window.confirmationResult = confirmationResult;
-          // ...
         })
         .catch((error) => {
-          // Error; SMS not sent
-          // ...
           console.log(error.message);
         });
     } else {
@@ -49,20 +54,33 @@ const PhoneNumberLogin = () => {
     setOTP(otp);
 
     if (otp.length === 6) {
-      // verify otp
+      setLoading(true);
       let confirmationResult = window.confirmationResult;
       confirmationResult
         .confirm(otp)
         .then((result) => {
-          // User signed in successfully.
+          setLoading(false);
           const user = result.user;
-          console.log(user);
-
-          // ...
+          const currentUser = { phoneNumber: phoneNumber };
+          if (user) {
+            fetch(`http://localhost:5000/phone_user/${phoneNumber}`, {
+              method: "PUT",
+              headers: {
+                "content-type": "application/json",
+              },
+              body: JSON.stringify(currentUser),
+            })
+              .then((res) => res.json())
+              .then((data) => {
+                const accessToken = data.token;
+                localStorage.setItem("accessToken", accessToken);
+                if (accessToken) {
+                  navigate(from, { replace: true });
+                }
+              });
+          }
         })
         .catch((error) => {
-          // User couldn't sign in (bad verification code?)
-          // ...
           console.log(error.message);
           setPhoneError(error.message);
         });
@@ -108,6 +126,7 @@ const PhoneNumberLogin = () => {
                   value={OTP}
                   onChange={verifierOTP}
                 />
+                {loading && <LoadingButton></LoadingButton>}
                 <div id="otpHelp">
                   Please enter the one time pin sent to your phone
                 </div>

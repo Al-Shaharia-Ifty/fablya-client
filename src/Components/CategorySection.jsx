@@ -18,7 +18,12 @@ import { Link } from "react-router-dom";
 const CategorySection = () => {
   return (
     <div className="bg-slate-100 pb-10">
-      <div className="bg-white py-10 px-5 2xl:mx-20 xl:mx-10 mx-5 ">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aso-delay="500"
+        className="bg-white py-10 px-5 2xl:mx-20 xl:mx-10 mx-5 "
+      >
         <Swiper
           slidesPerView={1}
           breakpoints={{

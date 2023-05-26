@@ -44,6 +44,9 @@ const FeaturedCollection = () => {
             navigation={true}
             modules={[Autoplay, Navigation]}
             className="mySwiper"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aso-delay="500"
           >
             {products?.map((p, i) => (
               <SwiperSlide key={i} className="bg-white rounded-lg p-2">
