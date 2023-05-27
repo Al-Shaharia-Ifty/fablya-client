@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import { QueryClient, QueryClientProvider } from "react-query";
 import AuthProvider from "./Context/AuthProvider";
+import FetchProvider from "./Context/FetchProvider";
 
 // Create a client
 const queryClient = new QueryClient();
@@ -12,7 +13,9 @@ root.render(
   <QueryClientProvider client={queryClient}>
     <React.StrictMode>
       <AuthProvider>
-        <App />
+        <FetchProvider>
+          <App />
+        </FetchProvider>
       </AuthProvider>
     </React.StrictMode>
   </QueryClientProvider>

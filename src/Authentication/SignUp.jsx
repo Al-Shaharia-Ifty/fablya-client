@@ -58,7 +58,7 @@ const SignUp = () => {
         </div>
       </div>
       <div className="flex justify-center mb-10 px-5">
-        <div className="max-w-sm w-full hover:shadow-2xl duration-300 p-5 rounded-lg">
+        <div className="max-w-sm w-full hover:shadow-xl duration-300 p-5 rounded-lg">
           <div className="flex justify-between items-center">
             <h2 className="text-2xl">Sign Up</h2>
             <div className="flex gap-2">
