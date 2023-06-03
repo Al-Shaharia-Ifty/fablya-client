@@ -12,7 +12,7 @@ const FetchProvider = ({ children }) => {
   } = useQuery({
     queryKey: ["userInfo"],
     queryFn: () =>
-      fetch(`http://localhost:5000/userInfo`, {
+      fetch(`https://fablya-server.vercel.app/userInfo`, {
         method: "GET",
         headers: {
           "content-type": "application/json",
@@ -27,6 +27,7 @@ const FetchProvider = ({ children }) => {
 
   const fetchDetails = {
     userInfo,
+    isLoading,
     refetch,
   };
 

@@ -22,7 +22,7 @@ const useSignUpAuth = () => {
         const name = data.name;
         const currentUser = { email: email, name: name };
         if (name) {
-          fetch(`http://localhost:5000/user/${email}`, {
+          fetch(`https://fablya-server.vercel.app/user/${email}`, {
             method: "PUT",
             headers: {
               "content-type": "application/json",

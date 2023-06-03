@@ -20,7 +20,7 @@ const Profile = () => {
       address: addressDetails,
     };
     console.log(updateUserInfo);
-    fetch("http://localhost:5000/updateUserInfo", {
+    fetch("https://fablya-server.vercel.app/updateUserInfo", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

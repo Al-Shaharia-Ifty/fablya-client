@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
-import Navbar from "../Shared/Navbar";
-import Footer from "../Shared/Footer";
 
 const DashboardMain = () => {
   const { logOut } = useContext(AuthContext);
@@ -15,7 +13,6 @@ const DashboardMain = () => {
 
   return (
     <div>
-      <Navbar />
       <div className="lg:flex my-10">
         <div>
           <div className="block p-5 border-2 rounded-lg shadow-xl mx-5 lg:mx-10 2xl:mx-20 mb-10 lg:mb-0">
@@ -52,7 +49,7 @@ const DashboardMain = () => {
                     ? "flex gap-2 items-center text-teal-500"
                     : "flex gap-2 items-center hover:text-yellow-500 duration-300"
                 }
-                to={"/dashboard/cart"}
+                to={"/cart"}
               >
                 <i className="fa-solid fa-cart-plus"></i>
                 <p>Cart</p>
@@ -99,7 +96,6 @@ const DashboardMain = () => {
 
         <Outlet />
       </div>
-      <Footer />
     </div>
   );
 };

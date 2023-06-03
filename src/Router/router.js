@@ -12,6 +12,7 @@ import Orders from "../Dashboard/Orders";
 import Cart from "../Dashboard/Cart";
 import WishList from "../Dashboard/WishList";
 import ChangePassword from "../Dashboard/ChangePassword";
+import RequireAuth from "../Authentication/RequireAuth";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,14 @@ export const router = createBrowserRouter([
         element: <ProductPage />,
       },
       {
+        path: "/cart",
+        element: (
+          <RequireAuth>
+            <Cart />
+          </RequireAuth>
+        ),
+      },
+      {
         path: "/login",
         element: <Login />,
       },
@@ -38,32 +47,31 @@ export const router = createBrowserRouter([
         path: "/login_with_phone",
         element: <PhoneNumberLogin />,
       },
-    ],
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/dashboard",
-    element: <DashboardMain />,
-    children: [
       {
-        path: "/dashboard/profile",
-        element: <Profile />,
-      },
-      {
-        path: "/dashboard/orders",
-        element: <Orders />,
-      },
-      {
-        path: "/dashboard/cart",
-        element: <Cart />,
-      },
-      {
-        path: "/dashboard/wishlist",
-        element: <WishList />,
-      },
-      {
-        path: "/dashboard/password_update",
-        element: <ChangePassword />,
+        path: "/dashboard",
+        element: (
+          <RequireAuth>
+            <DashboardMain />
+          </RequireAuth>
+        ),
+        children: [
+          {
+            path: "/dashboard/profile",
+            element: <Profile />,
+          },
+          {
+            path: "/dashboard/orders",
+            element: <Orders />,
+          },
+          {
+            path: "/dashboard/wishlist",
+            element: <WishList />,
+          },
+          {
+            path: "/dashboard/password_update",
+            element: <ChangePassword />,
+          },
+        ],
       },
     ],
     errorElement: <ErrorPage />,

@@ -2,15 +2,13 @@ import { RecaptchaVerifier } from "firebase/auth";
 import React, { useContext, useState } from "react";
 import { auth } from "../firebase.init";
 import { AuthContext } from "../Context/AuthProvider";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import LoadingButton from "../Shared/LoadingButton";
 
 const PhoneNumberLogin = () => {
   const countryCode = "+880";
 
   const navigate = useNavigate();
-  const location = useLocation();
-  let from = location.state?.from?.pathname || "/";
 
   const { createPhoneUser } = useContext(AuthContext);
 
@@ -63,19 +61,22 @@ const PhoneNumberLogin = () => {
           const user = result.user;
           const currentUser = { phoneNumber: phoneNumber };
           if (user) {
-            fetch(`http://localhost:5000/phone_user/${phoneNumber}`, {
-              method: "PUT",
-              headers: {
-                "content-type": "application/json",
-              },
-              body: JSON.stringify(currentUser),
-            })
+            fetch(
+              `https://fablya-server.vercel.app/phone_user/${phoneNumber}`,
+              {
+                method: "PUT",
+                headers: {
+                  "content-type": "application/json",
+                },
+                body: JSON.stringify(currentUser),
+              }
+            )
               .then((res) => res.json())
               .then((data) => {
                 const accessToken = data.token;
                 localStorage.setItem("accessToken", accessToken);
                 if (accessToken) {
-                  navigate(from, { replace: true });
+                  navigate("/");
                 }
               });
           }

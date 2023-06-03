@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
 
 const useLoginAuth = () => {
@@ -7,8 +7,6 @@ const useLoginAuth = () => {
   const [error, setError] = useState("");
 
   const navigate = useNavigate();
-  const location = useLocation();
-  let from = location.state?.from?.pathname || "/";
 
   const { signIn } = useContext(AuthContext);
 
@@ -21,7 +19,7 @@ const useLoginAuth = () => {
         const email = user?.email;
         const currentUser = { email: email };
         if (email) {
-          fetch(`http://localhost:5000/user/${email}`, {
+          fetch(`https://fablya-server.vercel.app/user/${email}`, {
             method: "PUT",
             headers: {
               "content-type": "application/json",
@@ -33,7 +31,7 @@ const useLoginAuth = () => {
               const accessToken = data.token;
               localStorage.setItem("accessToken", accessToken);
               if (accessToken) {
-                navigate(from, { replace: true });
+                navigate("/");
               }
             });
         }

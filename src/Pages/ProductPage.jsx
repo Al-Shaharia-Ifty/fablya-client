@@ -1,24 +1,29 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import Loading from "../Shared/Loading";
 import ImageGallery from "react-image-gallery";
 import SizeButton from "../Components/SizeButton";
+import Swal from "sweetalert2";
+import { AuthContext } from "../Context/AuthProvider";
 
 const ProductPage = () => {
+  const { user } = useContext(AuthContext);
+
   const params = useParams();
-  //   const [loading, setLoading] = useState(false);
+
   const [quantityNumber, setQuantityNumber] = useState(1);
   const [pSize, setPSize] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const { isLoading, data: productDetails } = useQuery({
     queryKey: "productDetails",
     queryFn: () =>
-      fetch(`http://localhost:5000/product/${params.id}`).then((res) =>
-        res.json()
+      fetch(`https://fablya-server.vercel.app/product/${params.id}`).then(
+        (res) => res.json()
       ),
   });
-  if (isLoading) {
+  if (isLoading || loading) {
     return <Loading />;
   }
 
@@ -32,9 +37,47 @@ const ProductPage = () => {
     );
   }
 
+  const handleAddToCart = () => {
+    if (user) {
+      if (quantityNumber > 0 && pSize) {
+        // add to cart start
+
+        setLoading(true);
+        const cartInfo = {
+          email: user?.email,
+          image: productDetails?.images[0]?.thumbnail,
+          name: productDetails?.name,
+          size: pSize,
+          price: productDetails?.amount,
+          quantity: quantityNumber,
+        };
+        fetch(`http://localhost:5000/addToCart/${productDetails?._id}`, {
+          method: "PUT",
+          headers: {
+            "content-type": "application/json",
+            authorization: `bearer ${localStorage.getItem("accessToken")}`,
+          },
+          body: JSON.stringify(cartInfo),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            setLoading(false);
+            Swal.fire("Add cart Successfully", "", "success");
+          });
+        setLoading(false);
+      } else if (!pSize) {
+        Swal.fire("please select size", "", "error");
+      } else if (quantityNumber === "" || quantityNumber !== typeof number) {
+        Swal.fire("Please add quantity", "", "error");
+      }
+    } else {
+      Swal.fire("Please login first", "", "error");
+    }
+  };
+
   return (
     <div>
-      <div className="flex justify-center">
+      <div className="flex justify-center overflow-hidden">
         <div className="max-w-[2000px] w-full xl:px-10 2xl:px-20 px-5 py-5">
           <div className="flex gap-2">
             <Link to={"/"}>Home</Link>
@@ -77,42 +120,25 @@ const ProductPage = () => {
                 items={productDetails?.images}
               />
             </div>
-            <div className="lg:w-1/2 w-full mt-5 lg:mt-0">
-              <h1
-                data-aos="fade-left"
-                data-aos-duration="600"
-                data-aso-delay="300"
-                className="text-2xl font-normal"
-              >
-                {productDetails?.name}
-              </h1>
-              <div
-                data-aos="fade-left"
-                data-aos-duration="700"
-                data-aso-delay="400"
-                className="text-3xl font-bold mt-2"
-              >
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aso-delay="500"
+              className="lg:w-1/2 w-full mt-5 lg:mt-0"
+            >
+              <h1 className="text-2xl font-normal">{productDetails?.name}</h1>
+              <div className="text-3xl font-bold mt-2">
                 ৳ <del className="text-red-500">{productDetails?.offPrice}</del>{" "}
                 {productDetails?.amount}
               </div>
-              <div
-                data-aos="fade-left"
-                data-aos-duration="800"
-                data-aso-delay="500"
-                className="border-dashed border-y-2 border-gray-300 py-3 mb-5 text-xl font-normal mt-5"
-              >
+              <div className="border-dashed border-y-2 border-gray-300 py-3 mb-5 text-xl font-normal mt-5">
                 <p>Color: {productDetails?.color}</p>
               </div>
 
               {productSize}
               {/* component */}
               <SizeButton productDetails={productDetails} setPSize={setPSize} />
-              <div
-                data-aos="fade-left"
-                data-aos-duration="900"
-                data-aso-delay="700"
-                className="flex mt-5 text-xl items-center gap-3"
-              >
+              <div className="flex mt-5 text-xl items-center gap-3">
                 <p>Quantity </p>
                 <button
                   onClick={() => {
@@ -133,13 +159,17 @@ const ProductPage = () => {
                 />
                 <button
                   onClick={() => {
-                    if (quantityNumber > 0) {
-                      setQuantityNumber(parseInt(quantityNumber) + 1);
-                    } else if (
-                      quantityNumber === "" ||
-                      quantityNumber !== typeof number
-                    ) {
-                      setQuantityNumber(1);
+                    if (pSize) {
+                      if (quantityNumber > 0) {
+                        setQuantityNumber(parseInt(quantityNumber) + 1);
+                      } else if (
+                        quantityNumber === "" ||
+                        quantityNumber !== typeof number
+                      ) {
+                        setQuantityNumber(1);
+                      }
+                    } else {
+                      Swal.fire("Please select size", "", "error");
                     }
                   }}
                   className="btn btn-outline"
@@ -147,13 +177,11 @@ const ProductPage = () => {
                   +
                 </button>
               </div>
-              <div
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aso-delay="800"
-                className="mt-5 flex gap-3"
-              >
-                <button className="btn btn-outline text-green-500 hover:bg-green-500 hover:text-white hover:border-green-500">
+              <div className="mt-5 flex gap-3">
+                <button
+                  onClick={handleAddToCart}
+                  className="btn btn-outline text-green-500 hover:bg-green-500 hover:text-white hover:border-green-500"
+                >
                   Add to cart
                 </button>
                 <button className="btn btn-outline text-red-500 hover:bg-red-500 hover:text-white hover:border-red-500">
