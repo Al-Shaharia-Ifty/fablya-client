@@ -8,7 +8,6 @@ import ProductPage from "../Pages/ProductPage";
 import PhoneNumberLogin from "../Authentication/PhoneNumberLogin";
 import DashboardMain from "../Dashboard/DashboardMain";
 import Profile from "../Dashboard/Profile";
-import Orders from "../Dashboard/Orders";
 import Cart from "../Dashboard/Cart";
 import WishList from "../Dashboard/WishList";
 import ChangePassword from "../Dashboard/ChangePassword";
@@ -60,8 +59,8 @@ export const router = createBrowserRouter([
             element: <Profile />,
           },
           {
-            path: "/dashboard/orders",
-            element: <Orders />,
+            // path: "/dashboard/orders",
+            // element: <Orders />,
           },
           {
             path: "/dashboard/wishlist",
